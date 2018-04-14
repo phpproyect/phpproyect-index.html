@@ -1,0 +1,21 @@
+{
+  "name": "phpproyect-index.html",
+  "scripts": {
+    "postdeploy": "echo \"# https-gist.github.com-phpproyect-\" >> README.md git init git add README.md git commit -m \"first commit\" git remote add origin https://github.com/phpproyect/https-gist.github.com-phpproyect-.git git push -u origin master"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
